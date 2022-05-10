@@ -211,7 +211,7 @@ public class ScreenShare extends BaseFragment implements View.OnClickListener {
         ChannelMediaOptions option = new ChannelMediaOptions();
         option.autoSubscribeAudio = true;
         option.autoSubscribeVideo = true;
-        int res = engine.joinChannel(accessToken, channelId, "Extra Optional Data", 0, option);
+        int res = engine.joinChannel(accessToken, channelId, "Extra Optional Data",1263, option);
         if (res != 0)
         {
             // Usually happens with invalid parameters
